@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 1,
+  "id": "hello-skill",
+  "name": "Hello Skill",
+  "entry": "SKILL.md"
+}

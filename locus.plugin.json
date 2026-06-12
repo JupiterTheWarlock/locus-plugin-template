@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "locus-plugin-template",
+  "name": "Locus Plugin Template",
+  "version": "0.1.0",
+  "compatibility": {
+    "projectIndependent": true
+  },
+  "components": {
+    "views": [
+      {
+        "id": "hello-view",
+        "path": "views/hello-view"
+      }
+    ],
+    "skills": [
+      {
+        "id": "hello-skill",
+        "path": "skills/hello-skill"
+      }
+    ],
+    "rules": [
+      {
+        "id": "hello-guardrails",
+        "path": "rules/hello-guardrails.md"
+      }
+    ]
+  }
+}

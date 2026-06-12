@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 1,
+  "id": "hello-view",
+  "name": "Hello View",
+  "entry": "src/main.js"
+}

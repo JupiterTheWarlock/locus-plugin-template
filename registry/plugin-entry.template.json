@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "locus-plugin-template",
+  "name": "Locus Plugin Template",
+  "author": "YOUR_GITHUB_USERNAME",
+  "repo": "YOUR_GITHUB_USERNAME/locus-plugin-template",
+  "license": "MIT",
+  "summary": "A short one-sentence summary of your Locus plugin.",
+  "description": "A longer registry description explaining what the plugin adds to Locus and why users would install it.",
+  "tags": [
+    "template",
+    "view",
+    "skill"
+  ],
+  "compatibility": {
+    "projectIndependent": true
+  },
+  "dependencies": {
+    "project": []
+  },
+  "downloadSource": {
+    "type": "latestRelease",
+    "repo": "YOUR_GITHUB_USERNAME/locus-plugin-template",
+    "assetPattern": "locus-plugin-template-*.zip"
+  },
+  "stats": [
+    {
+      "id": "githubStars",
+      "label": "Stars",
+      "value": 0
+    },
+    {
+      "id": "releaseDownloads",
+      "label": "Release downloads",
+      "value": 0
+    }
+  ]
+}
