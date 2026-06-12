@@ -11,19 +11,26 @@ Template repository for publishing Locus plugins with registry-ready GitHub Rele
    - `version`
    - component ids and paths if you rename folders
 3. Edit `README.md`, `LICENSE`, and `registry/plugin-entry.template.json`.
-4. Push to `main`.
+4. Push your changes to `main`.
+5. When you are ready to publish, create and push a matching version tag.
 
-On every push to `main`, `.github/workflows/release.yml` reads `locus.plugin.json`. If tag `v<version>` does not exist yet, it creates:
+On every pushed tag named `v<version>`, `.github/workflows/release.yml` reads `locus.plugin.json`. If the tag matches the manifest version and the release does not exist yet, it creates:
 
-- Git tag: `v<version>`
 - GitHub Release: `<plugin-id> <version>`
 - Asset: `<plugin-id>-<version>.zip`
 
 The zip is built from the repository root and contains `locus.plugin.json` at the archive root, which is required by the Locus plugin registry validator.
 
-## Manual Release
+## Release
 
-You can also run the release workflow manually from GitHub Actions. It uses the current `locus.plugin.json` version.
+The tag must match `locus.plugin.json`.
+
+```bash
+git tag v0.1.0
+git push origin v0.1.0
+```
+
+If you push commits without a tag, no production release is created.
 
 ## Registry Entry
 
